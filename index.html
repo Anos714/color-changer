@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Changer</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .maindiv {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 100px;
+    }
+
+    .button {
+      border: 1px solid black;
+      height: 100px;
+      width: 100px;
+      display: flex;
+    }
+
+    #Gray {
+      background-color: gray;
+    }
+    #Yellow {
+      background-color: yellow;
+    }
+    #Pink {
+      background-color: pink;
+    }
+    #Red {
+      background-color: red;
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      text-align: center;
+      text-decoration: underline;
+      margin-top: 70px;
+    }
+
+    .para {
+      display: flex;
+      margin-left: 360px;
+      margin-top: 80px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 7rem;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-align: center;
+      width: 500px;
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <h1>Color Scheme Switcher</h1>
+    <div class="maindiv">
+      <span class="button" id="Gray"></span>
+      <span class="button" id="Yellow"></span>
+      <span class="button" id="Pink"></span>
+      <span class="button" id="Red"></span>
+    </div>
+    <div class="para">
+      <p>
+        Try Clicking one of the colors above to change the background color of
+        this page!
+      </p>
+      <p>Made with &hearts; by Rahul Sain</p>
+    </div>
+  </body>
+  <script src="clr_changer.js"></script>
+</html>
